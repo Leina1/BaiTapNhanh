@@ -6,7 +6,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
+import android.content.Intent;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -45,7 +45,13 @@ public class MainActivity extends AppCompatActivity {
         btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Đăng nhập", Toast.LENGTH_SHORT).show();
+                String taikhoan = editTaiKhoan.getText().toString();
+                String matkhau = editMatKhau.getText().toString();
+
+                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                intent.putExtra("taikhoan", taikhoan);
+                intent.putExtra("matkhau", matkhau);
+                startActivity(intent);
             }
         });
 

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Homework Add Item</string>
+    <string name="add_shopping_item">Add Shopping Item</string>
+    <string name="item_name_hint">Item name</string>
+    <string name="quantity_hint">Quantity (e.g., 123)</string>
+    <string name="add_button">Add</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="enter_item_name_description">Enter item name</string>
+    <string name="enter_quantity_description">Enter quantity</string>
+    <string name="add_or_update_description">Add or update item</string>
+    <string name="cancel_dialog_description">Cancel dialog</string>
+    <string name="add_item">Add</string>
+</resources>

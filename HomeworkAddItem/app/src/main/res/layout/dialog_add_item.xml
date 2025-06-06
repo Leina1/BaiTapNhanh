@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/dialog_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_shopping_item"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/add_shopping_item" />
+
+    <EditText
+        android:id="@+id/edtItemName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:maxWidth="300dp"
+        android:hint="@string/item_name_hint"
+        android:inputType="text"
+        android:maxLength="50"
+        android:background="@drawable/edittext_background"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="#212121"
+        android:textColorHint="#757575"
+        android:autofillHints="name"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/edtQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:maxWidth="300dp"
+        android:hint="@string/quantity_hint"
+        android:inputType="number"
+        android:background="@drawable/edittext_background"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="#212121"
+        android:textColorHint="#757575"
+        android:autofillHints="quantity"
+        android:layout_marginBottom="24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:maxWidth="150dp"
+            android:layout_height="48dp"
+            android:text="@string/cancel_button"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_cancel_background"
+            android:contentDescription="@string/cancel_dialog_description"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:maxWidth="150dp"
+            android:layout_height="48dp"
+            android:text="@string/add_button"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_add_background"
+            android:contentDescription="@string/add_or_update_description" />
+    </LinearLayout>
+</LinearLayout>
